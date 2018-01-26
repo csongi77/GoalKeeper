@@ -15,4 +15,5 @@
     <dimen name="ruler_margin_top">10dp</dimen>
     <dimen name="ruler_width">1dp</dimen>
     <dimen name="landscape_container">50dp</dimen>
+    <dimen name="zero">0dp</dimen>
 </resources>

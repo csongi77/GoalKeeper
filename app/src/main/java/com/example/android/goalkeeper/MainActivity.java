@@ -8,6 +8,13 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     // declaring variables & TextView variable names
+    private static final String A_RESULT="a_result";
+    private static final String B_RESULT="b_result";
+    private static final String A_YELLOW="a_yellow";
+    private static final String B_YELLOW="b_yellow";
+    private static final String A_RED="a_red";
+    private static final String B_RED="b_red";
+
     private int teamA_goal;
     private int teamB_goal;
     private int teamA_yellowCard;
@@ -44,13 +51,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         //saving current results state
-        outState.putInt("a_result",teamA_goal);
-        outState.putInt("b_result",teamB_goal);
-        outState.putInt("a_yellow",teamA_yellowCard);
-        outState.putInt("b_yellow",teamB_yellowCard);
-        outState.putInt("a_red",teamA_redCard);
-        outState.putInt("b_red",teamB_redCard);
-        Log.e("saveInstanceState", "A goal: "+teamA_goal);
+        outState.putInt(A_RESULT,teamA_goal);
+        outState.putInt(B_RESULT,teamB_goal);
+        outState.putInt(A_YELLOW,teamA_yellowCard);
+        outState.putInt(B_YELLOW,teamB_yellowCard);
+        outState.putInt(A_RED,teamA_redCard);
+        outState.putInt(B_RED,teamB_redCard);
         super.onSaveInstanceState(outState);
     }
 
@@ -58,13 +64,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
       //  super.onRestoreInstanceState(savedInstanceState);
         // restoring state
-        teamA_goal=savedInstanceState.getInt("a_result");
-        teamB_goal=savedInstanceState.getInt("b_result");
-        teamA_yellowCard=savedInstanceState.getInt("a_yellow");
-        teamB_yellowCard=savedInstanceState.getInt("b_yellow");
-        teamA_redCard=savedInstanceState.getInt("a_red");
-        teamB_redCard=savedInstanceState.getInt("b_red");
-        Log.e("restoreInstanceState", "A goal: "+teamA_goal);
+        teamA_goal=savedInstanceState.getInt(A_RESULT);
+        teamB_goal=savedInstanceState.getInt(B_RESULT);
+        teamA_yellowCard=savedInstanceState.getInt(A_YELLOW);
+        teamB_yellowCard=savedInstanceState.getInt(B_YELLOW);
+        teamA_redCard=savedInstanceState.getInt(A_RED);
+        teamB_redCard=savedInstanceState.getInt(B_RED);
 
         // displaying current gameState
         dislplayResult(team_a_result, teamA_goal);
