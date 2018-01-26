@@ -6,19 +6,22 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.goalkeeper.MainActivity"
     >
-
+<!-- background -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/goal" />
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
+<!-- left paner -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -153,7 +156,7 @@
             android:background="#aaaaaa"
             android:onClick="team_a_goal"
             ></View>
-
+<!-- right panel -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -280,7 +283,8 @@
                 android:onClick="team_b_redcard"/>
         </LinearLayout>
     </LinearLayout>
-
+</ScrollView>
+<!-- reset button -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
