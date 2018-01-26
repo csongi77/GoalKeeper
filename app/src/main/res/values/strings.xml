@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Goal Keeper</string>
+    <string name="team_a">Team A</string>
+    <string name="zero">0</string>
+    <string name="yellow_cards">Yellow cards:</string>
+    <string name="red_cards">Red cards:</string>
+    <string name="goal">Goaaal!</string>
+    <string name="yellow_card">Yellow card</string>
+    <string name="red_card">red card!</string>
+    <string name="reset">Reset match</string>
+    <string name="team_b">Team B</string>
 </resources>
