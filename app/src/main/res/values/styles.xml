@@ -70,5 +70,6 @@
     <style name="reset_button">
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>
     </style>
 </resources>
