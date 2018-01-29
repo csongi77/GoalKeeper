@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.goalkeeper.MainActivity">
     <!-- background -->
+    <!-- image from: https://www.dreamstime.com/soccer-net-public-domain-image-free-97146102 -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/goal" />
+        android:src="@drawable/dreamstime_xxl_97146102" />
 
     <ScrollView
         android:layout_width="match_parent"
