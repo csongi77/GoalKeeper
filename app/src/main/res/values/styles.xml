@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <!-- *********************************************************************
                                 Top display root
         **********************************************************************-->
@@ -26,6 +27,7 @@
     <style name="score_style" parent="top_display_root">
         <item name="android:textSize">@dimen/team_score_text_size</item>
     </style>
+
     <!-- *********************************************************************
                                 Card display root
         **********************************************************************-->
@@ -35,28 +37,33 @@
         <item name="android:layout_marginTop">@dimen/card_display_margin_top</item>
         <item name="android:layout_marginBottom">@dimen/card_display_margin_bottom</item>
     </style>
+
     <!-- yellow card display text -->
     <style name="yellow_card_display_text" parent="card_display_root">
         <item name="android:layout_marginLeft">@dimen/card_display_margin_left</item>
         <item name="android:background">@color/yellow</item>
     </style>
+
     <!-- yellow card display number -->
     <style name="yellow_card_display_number" parent="card_display_root">
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginRight">@dimen/card_display_margin_right</item>
         <item name="android:background">@color/yellow</item>
     </style>
+
     <!-- red card display text -->
     <style name="red_card_display_text" parent="card_display_root">
         <item name="android:layout_marginLeft">@dimen/card_display_margin_left</item>
         <item name="android:background">@color/red</item>
     </style>
+
     <!-- red card display number -->
     <style name="red_card_display_number" parent="card_display_root">
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginRight">@dimen/card_display_margin_right</item>
         <item name="android:background">@color/red</item>
     </style>
+
     <!-- *********************************************************************
                                     Button style
             **********************************************************************-->
@@ -66,6 +73,7 @@
         <item name="android:layout_marginRight">@dimen/button_margin_horizontal</item>
         <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
     </style>
+
     <!-- reset button style -->
     <style name="reset_button">
         <item name="android:layout_alignParentBottom">true</item>
