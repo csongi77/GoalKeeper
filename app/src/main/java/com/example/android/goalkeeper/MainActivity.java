@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    // declaring variables & TextView variable names
+    // declaring constants, variables & TextView variable names
     private static final String BUNDLE_A_RESULT ="BUNDLE_A_RESULT";
     private static final String BUNDLE_B_RESULT ="BUNDLE_B_RESULT";
     private static final String BUNDLE_A_YELLOW ="BUNDLE_A_YELLOW";
@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             mTextViewTeamAYellowNumber,
             mTextViewTeamBYellowNumber;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         mTeamB_yellowCard = 0;
         mTeamA_redCard = 0;
         mTeamB_redCard = 0;
-        mTextViewTeamAResult = (TextView) findViewById(R.id.text_view_team_a_result);
-        mTextViewTeamBResult = (TextView) findViewById(R.id.text_view_team_b_result);
-        mTextViewTeamARedNumber = (TextView) findViewById(R.id.text_view_team_a_red_number);
-        mTextViewTeamBRedNumber = (TextView) findViewById(R.id.text_view_team_b_red_number);
-        mTextViewTeamAYellowNumber = (TextView) findViewById(R.id.text_view_team_a_yellow_number);
-        mTextViewTeamBYellowNumber = (TextView) findViewById(R.id.text_view_team_b_yellow_number);
+        mTextViewTeamAResult = findViewById(R.id.text_view_team_a_result);
+        mTextViewTeamBResult = findViewById(R.id.text_view_team_b_result);
+        mTextViewTeamARedNumber = findViewById(R.id.text_view_team_a_red_number);
+        mTextViewTeamBRedNumber = findViewById(R.id.text_view_team_b_red_number);
+        mTextViewTeamAYellowNumber = findViewById(R.id.text_view_team_a_yellow_number);
+        mTextViewTeamBYellowNumber = findViewById(R.id.text_view_team_b_yellow_number);
     }
 
     @Override
@@ -88,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * adding values in case of onClick event
      */
-
     public void team_a_goal(View view) {
         dislplayResult(mTextViewTeamAResult, ++mTeamA_goal);
     }
@@ -116,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * resetting values
      */
-
     public void reset(View view) {
         mTeamA_goal = 0;
         mTeamB_goal = 0;
