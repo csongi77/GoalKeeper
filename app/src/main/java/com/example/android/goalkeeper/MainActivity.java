@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         mTeamB_yellowCard = 0;
         mTeamA_redCard = 0;
         mTeamB_redCard = 0;
-        mTextViewTeamAResult = findViewById(R.id.text_view_team_a_result);
-        mTextViewTeamBResult = findViewById(R.id.text_view_team_b_result);
-        mTextViewTeamARedNumber = findViewById(R.id.text_view_team_a_red_number);
-        mTextViewTeamBRedNumber = findViewById(R.id.text_view_team_b_red_number);
-        mTextViewTeamAYellowNumber = findViewById(R.id.text_view_team_a_yellow_number);
-        mTextViewTeamBYellowNumber = findViewById(R.id.text_view_team_b_yellow_number);
+        mTextViewTeamAResult = findViewById(R.id.text_team_a_result);
+        mTextViewTeamBResult = findViewById(R.id.text_team_b_result);
+        mTextViewTeamARedNumber = findViewById(R.id.text_team_a_red_number);
+        mTextViewTeamBRedNumber = findViewById(R.id.text_team_b_red_number);
+        mTextViewTeamAYellowNumber = findViewById(R.id.text_team_a_yellow_number);
+        mTextViewTeamBYellowNumber = findViewById(R.id.text_team_b_yellow_number);
     }
 
     @Override
